@@ -17,6 +17,7 @@ body {
 }
 
 .buyButton {
+  overflow: hidden;
   display: block;
   position: relative;
   padding: 1rem 3rem;
@@ -35,7 +36,6 @@ body {
     inset 0px 5px 5px hsl(175deg 100% 90% / 0.75);
   font-weight: 500;
   cursor: pointer;
-  overflow: hidden;
 
   /*
     Add a white glow near the top of the button,
@@ -53,28 +53,28 @@ body {
     filter: blur(4px);
     opacity: 0.625;
   }
-  /* Animation */
-  @keyframes shimmer {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(100%);
-    }
+}
+/* Animation */
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
   }
+  to {
+    transform: translateX(100%);
+  }
+}
 
-  .shimmer {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(
-      to right,
-      transparent,
-      hsl(180deg 100% 90%),
-      transparent
-    );
-    opacity: 0.5;
-    animation: shimmer forwards;
-  }
+.shimmer {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    hsl(180deg 100% 90%),
+    transparent
+  );
+  opacity: 0.5;
+  animation: shimmer forwards;
 }
