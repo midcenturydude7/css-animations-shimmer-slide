@@ -1,0 +1,24 @@
+{
+  "name": "shimmer-slide",
+  "version": "1.0.0",
+  "description": "A simple shimmer slide animation using CSS.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": [
+    "css",
+    "animation",
+    "shimmer",
+    "slide",
+    "frontend",
+    "web development"
+  ],
+  "author": "midcenturydude7",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "vite": "^6.3.6"
+  }
+}
