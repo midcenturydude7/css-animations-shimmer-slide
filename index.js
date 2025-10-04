@@ -1,5 +1,3 @@
-import { random, range } from "lodash";
-
 const btn = document.querySelector(".buyButton");
 
 const SHIMMER_DURATION = 1000;
